@@ -1,181 +1,90 @@
-body{
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100bh;
-    background-color: #f4f4f4;
+    min-height: 100vh;
 }
 
-header{
-    padding: 30px;
-    text-align: center;
-    background: #1a3d5c
-}
-
-header h1, header p {  
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    color: #ffffff;
-    margin: 5px 0;  
+header {    
+    padding: 30px;    
+    text-align: center;    
+    background: #827575;
 }
 
 nav {   
-    padding: 13px;
+    padding: 15px;
     text-align: center;    
-    background: #235295;
+    background: #333333;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
 }
 
-nav a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 1px;
-    margin: 5px 25px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #aaaaaa;
-}
-
-main{
+article {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-}
-
-.profileCard{
-    background-color: #ffffff8f;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-    padding: 30px;
     width: 100%;
-    max-width: 400px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #333333;
-}
-
-.profilePhoto img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #827575;
-    margin-bottom: 20px
-}
-
-.profileInfo h2{
-    margin-top: 0;
-    margin-bottom: 10px;
-    color:#1a3d5c;
-}
-
-.profileInfo .description {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #1a3d5c;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.skills{
-    text-align: left;
-    margin-top: 15px;
-    color:#1a3d5c;
-}
-
-.skills ul{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #1a3d5c;
-    padding-left: 20px;
-    margin-top: 5px;
-    font-size: 15px;
-}
-
-.link{
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 2px solid #1c2a91;
-    color:#393d83;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.link:hover{
-    color: #333333;
-    border-bottom-color: #333333;
-}
-
-
-article {
-    padding: 30px;   
-    max-width: 900px;    
-    margin: auto;
-    color:#333333;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 footer {    
     padding: 20px;    
     text-align: center;    
-    background: #ffffff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
+    background: #6e4d4d;
 }
 
-footer p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color:#258bd4;
-    margin: 0;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
 
-.video-bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin: 0 25px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-@media (min-width: 600px){
-    .profileCard{
-        max-width: 600px;
-        padding: 40px;
-    }
-    .profile-photo img{
-        width: 150px;
-        height: 150px;
-    }
+nav a:hover {
+    color: #aaaaaa;
 }
 
-@media (min-width: 900px){
-    .profileCard{
-        max-width: 800px;
-        flex-direction: row;
-        text-align: left;
-        align-items: center;
-    }
+header p, footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
 
-    .profilePhoto img{
-        margin-bottom: 0;
-        margin-right: 40px;
-    }
+article p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #786262;
+}
 
-    .skills{
-        text-align: left;
-    }
+article a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #827575;
+}
+
+article a:hover {
+    color: #333333;
+    border-bottom-color: #333333;
+}
+
+article ol {
+    color: #333333;
+    line-height: 1.8;
+    padding-left: 20px;
 }
